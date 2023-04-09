@@ -1,4 +1,4 @@
-# TelEng-Skills-Challange
+# TelEng-Skills-Challenge
 This pipeline is configured using a stdin plugin as well as an HTTP input plugin. The HTTP plugin allows for ingestion of data through single or multiline events over http(s). 
 This message is then processed and parsed using a custom GROK pattern. I went ahead and parsed the whole message, and then later dropped the unnecessary fields within the mutate filter.
 I also renamed the necessary fields within this filter. Using GREEDYDATA was a convenient way to capture the necessary log information in a single field, and later parse that out using key value pairs.
